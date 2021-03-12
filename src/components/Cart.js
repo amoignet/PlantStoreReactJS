@@ -2,7 +2,6 @@ import '../styles/Cart.css';
 import { useState } from 'react';
 
 const Cart = ({ cart, updateCart }) => {
-    console.log('cart de cart.js:', cart)
     const [isOpen, setIsOpen] = useState(false);
     const total = cart.reduce((acc, plantType) => 
         acc + plantType.price * plantType.amount, 0
