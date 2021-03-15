@@ -29,14 +29,11 @@ function ShoppingList({ cart, updateCart }) {
 
 	return (
 		<div className='lmj-shopping-list'>
-			
-			<div>
-				<Categories
-					categories={categories}
-					FilteredCategory={FilteredCategory}
-					setCategory={setCategory}
-				/>
-			</div>
+			<Categories
+				categories={categories}
+				FilteredCategory={FilteredCategory}
+				setCategory={setCategory}
+			/>
 			<ul className='lmj-plant-list'>
 				{plantList.map(({ id, cover, name, water, light, price, category }) => (
 					!FilteredCategory || FilteredCategory === category ? (
@@ -50,7 +47,7 @@ function ShoppingList({ cart, updateCart }) {
 									cart={cart}
 									updateCart={updateCart}
 								/>
-								<button onClick={()=> addToCart(name, price)}>Ajouter au Panier</button>
+								<button className='lmj-plant-list-button-addToCart' onClick={()=> addToCart(name, price)}>Ajouter au Panier</button>
 						</div>
 					) : null
 				))}

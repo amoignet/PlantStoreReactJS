@@ -1,3 +1,5 @@
+import '../styles/Categories.css'
+
 function Categories({categories, FilteredCategory, setCategory}) {
 
     return (

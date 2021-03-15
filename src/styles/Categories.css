@@ -1,8 +1,11 @@
 .lmj-categories {
 	text-align: center;
-	padding-top: 30px;
+	margin: 16px;
 }
 
 .lmj-categories-select {
-	margin-right: 15px;
+	margin-right: 10px;
+	padding: 15px;
+	border-radius: 4px;
+	font-size: 16px;
 }
